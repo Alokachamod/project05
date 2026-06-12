@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Bookshop Catalog</title>
 </head>
+
 <body>
     <h1>📚Apex Bookshop & Stationers</h1>
     <p>welcome to our school bookshop. Use the quick links below to jump straight to your section:</p>
     <nav>
         <ul>
             <li><a href="#story-books">Story Books Section</a></li>
-            <li><a href="#">Textbooks Section</a></li>
-            <li><a href="#">Place an Order</a></li>
+            <li><a href="#textbooks">Textbooks Section</a></li>
+            <li><a href="#order">Place an Order</a></li>
         </ul>
     </nav>
 
@@ -26,10 +28,10 @@
                 <th>Book Title & Details</th>
                 <th>Price</th>
                 <th>Availability</th>
-                
+
             </tr>
             <tr>
-                <td >
+                <td>
                     <img src="/assets/imgs/the secret island.jpg" alt="The Secret Island" width="100">
                 </td>
                 <td>
@@ -47,7 +49,8 @@
                 <td>
                     <strong>Madol Duwa</strong><br>
                     <small>Author: Martin Wickramasinghe</small>
-                    <p>A classic sinhalese novel translated into English, showcasing the lives of teenage boys on an isolated island.</p>
+                    <p>A classic sinhalese novel translated into English, showcasing the lives of teenage boys on an
+                        isolated island.</p>
                 </td>
                 <td>Rs. 600.00</td>
                 <td><mark>In Stock</mark></td>
@@ -55,10 +58,10 @@
         </table>
         <br>
         <br>
-        <a href="#home">🔺Back to Top</a>
+        <a href="#">🔺Back to Top</a>
     </section>
     <hr>
-    <section>
+    <section id="textbooks">
         <h2>📝School Textbooks</h2>
         <table border="1" cellpadding="10">
             <tr>
@@ -84,9 +87,42 @@
             </tr>
         </table>
         <br><br>
-        <a href="#home">🔺Back to Top</a>
+        <a href="#">🔺Back to Top</a>
     </section>
+    <section id="order">
+        <h2>🛒Quick Order Reservation</h2>
+        <p>Fill out this form to reserve your books before coming to the store.</p>
+        <fieldset>
+            <legend>Order details</legend>
+            <form>
+                <label for="admission">Student Admission No:</label><br>
+                <input type="text" name="admission" placeholder="e.g., ST-1234"><br><br>
 
-    
+                <label for="book">Select Book to Reserve:</label><br>
+                <select name="book">
+                    <option>The Secret Island(Rs. 850.00)</option>
+                    <option>Madol Duwa(Rs. 600.00)</option>
+                    <option>ICT Textbook (Grade 10/11)</option>
+                    <option>Mathematics Textbook (Grade 11)</option>
+                </select>
+                <br><br>
+                <label for="date">Preferred Collection Date:</label><br>
+                <input type="date" name="date"><br><br>
+
+                <label for="notes">Special Notes / Instructions:</label><br>
+                <textarea name="notes" rows="4" cols="50"></textarea><br><br>
+
+
+                <button type="submit">Submit Reservation</button> <button type="reset">Reset Form</button>
+
+            </form>
+        </fieldset>
+    </section>
+    <footer>
+        &copy; 2026 apex Bookshop Management System
+    </footer>
+
+
 </body>
+
 </html>
